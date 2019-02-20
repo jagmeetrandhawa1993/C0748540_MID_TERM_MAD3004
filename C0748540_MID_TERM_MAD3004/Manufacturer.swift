@@ -7,3 +7,29 @@
 //
 
 import Foundation
+
+class Manufacturer: IDisplay {
+    
+    
+    
+    var mid : Int
+    var mname : String
+    
+    
+    init(mid: Int, mname: String)
+    {
+        self.mid = mid
+        self.mname = mname
+    }
+    
+    
+    func display() {
+        <#code#>
+    }
+    
+    func printData() {
+        <#code#>
+    }
+    
+    
+}

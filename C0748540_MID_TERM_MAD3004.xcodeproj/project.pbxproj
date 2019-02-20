@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D02CBAB221E1A3B00A24FB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D02CBAA221E1A3B00A24FB9 /* main.swift */; };
 		0D02CBB2221E1B4900A24FB9 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D02CBB1221E1B4900A24FB9 /* Manufacturer.swift */; };
+		0D02CBB4221E1BB300A24FB9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D02CBB3221E1BB300A24FB9 /* Product.swift */; };
+		0D02CBB6221E1BCB00A24FB9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D02CBB5221E1BCB00A24FB9 /* Order.swift */; };
+		0D02CBB8221E1BE500A24FB9 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D02CBB7221E1BE500A24FB9 /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +30,9 @@
 		0D02CBA7221E1A3B00A24FB9 /* C0748540_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0748540_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D02CBAA221E1A3B00A24FB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0D02CBB1221E1B4900A24FB9 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		0D02CBB3221E1BB300A24FB9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0D02CBB5221E1BCB00A24FB9 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0D02CBB7221E1BE500A24FB9 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 			children = (
 				0D02CBAA221E1A3B00A24FB9 /* main.swift */,
 				0D02CBB1221E1B4900A24FB9 /* Manufacturer.swift */,
+				0D02CBB3221E1BB300A24FB9 /* Product.swift */,
+				0D02CBB5221E1BCB00A24FB9 /* Order.swift */,
+				0D02CBB7221E1BE500A24FB9 /* IDisplay.swift */,
 			);
 			path = C0748540_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -124,6 +133,9 @@
 			files = (
 				0D02CBB2221E1B4900A24FB9 /* Manufacturer.swift in Sources */,
 				0D02CBAB221E1A3B00A24FB9 /* main.swift in Sources */,
+				0D02CBB6221E1BCB00A24FB9 /* Order.swift in Sources */,
+				0D02CBB8221E1BE500A24FB9 /* IDisplay.swift in Sources */,
+				0D02CBB4221E1BB300A24FB9 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
