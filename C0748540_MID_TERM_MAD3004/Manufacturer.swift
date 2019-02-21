@@ -24,10 +24,11 @@ class Manufacturer: IDisplay {
     
     
     func display() {
-        <#code#>
+        print("pid: \(self.mid)")
     }
     
     func printData() {
+        print("")
         <#code#>
     }
     

@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class Order {
+    
+    var oid: Int
+    var orderdate: Date
+    
+    var products = [String]()
+    
+    var ordertotal : Double
+    
+    init(oid : Int, orderdate: Date )
+    {
+        self.oid = oid
+        self.orderdate = orderdate
+    }
+    
+    
+}
