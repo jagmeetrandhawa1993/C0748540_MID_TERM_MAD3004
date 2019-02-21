@@ -10,8 +10,8 @@ import Foundation
 
 class Product : Manufacturer {
     
-    private var pid : Int
-    private var pname : String
+     var pid : Int
+     var pname : String
      var price : Int
      var quantity : Int
     
@@ -23,7 +23,7 @@ class Product : Manufacturer {
         self.price = price
         self.quantity = quantity
         
-        super.init(mid: <#T##Int#>, mname: <#T##String#>)
+        super.init(mid: mid, mname: mname)
     }
     
     

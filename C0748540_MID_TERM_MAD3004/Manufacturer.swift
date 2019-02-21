@@ -26,8 +26,8 @@ class Manufacturer: IDisplay {
     
     
     func display() {
-        print("Product id: \(self.mid)")
-        print("Product Name: \(self.mname)")    }
+        print("Manufacturer id: \(self.mid)")
+        print("Manufacturer Name: \(self.mname)")    }
     
     
     

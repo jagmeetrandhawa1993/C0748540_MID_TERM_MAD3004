@@ -29,7 +29,8 @@ class Order: Product {
         self.oid = oid
         self.orderdate = orderdate
         
-        super.init(mid: <#T##Int#>, mname: <#T##String#>)
+        super.init(mid: <#T##Int#>, mname: <#T##String#>, pid: <#T##Int#>, pname: <#T##String#>, price: <#T##Int#>, quantity: <#T##Int#>)
+        
     }
     
     
@@ -38,5 +39,5 @@ class Order: Product {
         print("orderdate: \(self.orderdate)")
     
     
-    
+    }
 }
