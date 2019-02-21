@@ -10,34 +10,24 @@ import Foundation
 
 class Order: Product {
     
-    private var oid: Int
-    private var orderdate: Date
-    
-    var products = [String]()
-    
-    
-    
-    func ordertotal() {
+    class Order {
+        var orderId: Int
+        var orderDate: Date
+        var product: [Product]
+        var orderTotal: Float
         
-       var total = super.price * super.quantity
-        
-        
+        init(OrdId: Int, OrdDate: Date, Product: [Product], OrdTotal: Float) {
+            self.orderId = OrdId
+            self.orderDate = OrdDate
+            self.product = Product
+            self.orderTotal = OrdTotal
+        }
     }
     
-    init(oid : Int, orderdate: Date )
-    {
-        self.oid = oid
-        self.orderdate = orderdate
-        
-        super.init(mid: <#T##Int#>, mname: <#T##String#>, pid: <#T##Int#>, pname: <#T##String#>, price: <#T##Int#>, quantity: <#T##Int#>)
-        
-    }
+    /*override func display() {
+        print("Order id: \(self.pid)")
+        print("Order date: \(self.orderdate)")
     
     
-    override func display() {
-        print("oid: \(self.oid)")
-        print("orderdate: \(self.orderdate)")
-    
-    
-    }
+    }*/
 }

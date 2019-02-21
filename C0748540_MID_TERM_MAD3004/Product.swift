@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Product : Manufacturer {
+class Product  {
     
      var pid : Int
      var pname : String
@@ -23,15 +23,14 @@ class Product : Manufacturer {
         self.price = price
         self.quantity = quantity
         
-        super.init(mid: mid, mname: mname)
     }
     
     
-    override func display() {
-        print("pid: \(self.pid)")
-        print("pname: \(self.pname)")
+     func display() {
+        print("Product id: \(self.pid)")
+        print("Productname: \(self.pname)")
         print("price: \(self.price)")
-        print("pname: \(self.quantity)")
+        print("Quantity: \(self.quantity)")
     }
     
     
