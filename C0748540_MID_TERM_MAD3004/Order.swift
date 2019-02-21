@@ -8,20 +8,35 @@
 
 import Foundation
 
-class Order {
+class Order: Product {
     
-    var oid: Int
-    var orderdate: Date
+    private var oid: Int
+    private var orderdate: Date
     
     var products = [String]()
     
-    var ordertotal : Double
+    
+    
+    func ordertotal() {
+        
+       var total = super.price * super.quantity
+        
+        
+    }
     
     init(oid : Int, orderdate: Date )
     {
         self.oid = oid
         self.orderdate = orderdate
+        
+        super.init(mid: <#T##Int#>, mname: <#T##String#>)
     }
+    
+    
+    override func display() {
+        print("oid: \(self.oid)")
+        print("orderdate: \(self.orderdate)")
+    
     
     
 }

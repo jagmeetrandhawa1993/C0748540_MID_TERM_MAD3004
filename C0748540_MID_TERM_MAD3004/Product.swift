@@ -12,21 +12,18 @@ class Product : Manufacturer {
     
     private var pid : Int
     private var pname : String
-    private var price : Double
-    private var quantity : Int
+     var price : Int
+     var quantity : Int
     
-    override init(mid: Int, mname: String) {
-        
-        super.init(mid: <#T##Int#>, mname: <#T##String#>)
-    }
     
-    init(pid: Int, pname: String, price: Double, quantity: Int)
+    init(mid: Int, mname: String, pid: Int, pname: String, price: Int, quantity: Int)
     {
         self.pid = pid
         self.pname = pname
         self.price = price
         self.quantity = quantity
         
+        super.init(mid: <#T##Int#>, mname: <#T##String#>)
     }
     
     

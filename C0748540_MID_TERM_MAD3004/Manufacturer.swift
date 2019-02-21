@@ -16,6 +16,8 @@ class Manufacturer: IDisplay {
     var mname : String
     
     
+    
+    
     init(mid: Int, mname: String)
     {
         self.mid = mid
@@ -24,13 +26,9 @@ class Manufacturer: IDisplay {
     
     
     func display() {
-        print("pid: \(self.mid)")
-    }
+        print("Product id: \(self.mid)")
+        print("Product Name: \(self.mname)")    }
     
-    func printData() {
-        print("")
-        <#code#>
-    }
     
     
 }
