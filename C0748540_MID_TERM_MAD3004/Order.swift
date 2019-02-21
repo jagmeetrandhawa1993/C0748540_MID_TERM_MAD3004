@@ -8,26 +8,44 @@
 
 import Foundation
 
-class Order: Product {
+class Order: IDisplay {
+    var oId: Int
+    var oDate: Date
+    var product: [Product]
+    var orderTotal: Float!
     
-    class Order {
-        var orderId: Int
-        var orderDate: Date
-        var product: [Product]
-        var orderTotal: Float
+    init(oId: Int, oDate: Date, Product: [Product], orderTotal: Float) {
+        self.oId = oId
+        self.oDate = oDate
+        self.product = Product
+        self.orderTotal = calculateTotlaOrder(products: self.product)
         
-        init(OrdId: Int, OrdDate: Date, Product: [Product], OrdTotal: Float) {
-            self.orderId = OrdId
-            self.orderDate = OrdDate
-            self.product = Product
-            self.orderTotal = OrdTotal
-        }
     }
     
-    /*override func display() {
-        print("Order id: \(self.pid)")
-        print("Order date: \(self.orderdate)")
+    func calculateTotlaOrder(products : [Product])-> Float {
+        var total : Float
+        total=0.0
+        for p in 0..<product.count{
+            total += product[p].price
+            
+        }
+        return total;
+    }
+    
+    func display() {
+        print("Order Id: \(oId)")
+        print("Order Date: \(oDate)")
+        
+        for p in 0..<product.count{
+            print("Products: \(product[p].pname)")
+        }
+        
+        print("Order Total : \(String(describing: orderTotal!))")
+    }
     
     
-    }*/
+    func getOrderById() -> Int {
+        return self.oId
+    }
+    
 }

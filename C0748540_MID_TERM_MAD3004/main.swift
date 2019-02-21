@@ -28,3 +28,20 @@ for a in arrayProducts{
 }
 
 
+var order1 = Order(oId: 1, oDate: Date(), Product: [p1, p5], orderTotal: 100)
+var order2 = Order(oId: 2, oDate: Date(), Product: [p3, p4],orderTotal: 200)
+var order3 = Order(oId: 3, oDate: Date(), Product: [p5,p1],orderTotal: 250)
+
+//var Orders=[1: order1,2:order2,3: order3]
+
+
+//Orders.getOrderById(i: 4)
+
+var arrayOrders=[order1.oId: order1,order2.oId:order2,order3.oId: order3]
+
+for (_, order) in arrayOrders{
+    print(order.display())
+}
+
+// With this method you can get the orders by there id.
+arrayOrders.getOrderById(i: 3)

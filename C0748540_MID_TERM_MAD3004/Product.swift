@@ -12,15 +12,15 @@ class Product  {
     
      var pid : Int
      var pname : String
-     var price : Int
+     var price : Float
      var quantity : Int
     
     
-    init(mid: Int, mname: String, pid: Int, pname: String, price: Int, quantity: Int)
+    init(mid: Int, mname: String, pid: Int, pname: String, price: Float, quantity: Int)
     {
         self.pid = pid
         self.pname = pname
-        self.price = price
+        self.price = Float(price)
         self.quantity = quantity
         
     }
