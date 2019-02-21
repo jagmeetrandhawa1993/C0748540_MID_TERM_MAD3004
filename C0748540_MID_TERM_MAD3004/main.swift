@@ -37,11 +37,11 @@ var order3 = Order(oId: 3, oDate: Date(), Product: [p5,p1],orderTotal: 250)
 
 //Orders.getOrderById(i: 4)
 
-var arrayOrders=[order1.oId: order1,order2.oId:order2,order3.oId: order3]
+var Orders=[order1.oId: order1,order2.oId:order2,order3.oId: order3]
 
-for (_, order) in arrayOrders{
+for (_, order) in Orders{
     print(order.display())
 }
 
 // With this method you can get the orders by there id.
-arrayOrders.getOrderById(i: 3)
+//Orders.getOrderById(i: 3)

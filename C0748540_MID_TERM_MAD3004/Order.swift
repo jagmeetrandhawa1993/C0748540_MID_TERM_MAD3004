@@ -18,11 +18,11 @@ class Order: IDisplay {
         self.oId = oId
         self.oDate = oDate
         self.product = Product
-        self.orderTotal = calculateTotlaOrder(products: self.product)
+        self.orderTotal = calTotlaOrder(products: self.product)
         
     }
     
-    func calculateTotlaOrder(products : [Product])-> Float {
+    func calTotlaOrder(products : [Product])-> Float {
         var total : Float
         total=0.0
         for p in 0..<product.count{
